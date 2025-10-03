@@ -1,48 +1,102 @@
-*{
-    margin: 0;
-    padding:0;
+* {
+  margin: 0;
+  padding: 0;
 }
 
-body{
-    padding:20px 20px;
-    font-family: Verdana, sans-serif;
-    box-sizing: border-box;
-    background-color: #0d1b2a;
-    color: #FFF;
+body {
+  padding: 20px 20px;
+  box-sizing: border-box;
+  background-color: #0d1b2a;
+  color: #fff;
+  font-family: "Roboto Serif", "Times New Roman", Times, serif;
+  font-weight: 400;
+}
+
+/****Font sizing*****/
+h1,
+h2,
+h3,
+h4,
+header {
+  font-family: "Montserrat", Arial, Helvetica, sans-serif;
+  font-weight: 700;
+}
+
+h1 {
+  font-size: 2.5rem;
+}
+h2 {
+  font-size: 2rem;
+}
+h3 {
+  font-size: 1.5rem;
 }
 
 /* header container styles*/
-header{
+
+header {
   max-width: fit-content;
-  background-color: rgba(0, 71, 171, 0.8);
   border-radius: 0.5rem;
-  padding: 10px 20px;
-  font-size: 1.5rem;
+  padding: 1rem 1rem;
+  font-weight: 600;
   text-align: center;
-  margin: auto;
+  margin: 1rem auto;
+  position: relative;
 }
-header img{
-    width:auto;
-    height: 200px;
+
+header img.main-pic {
+  max-width: 100%;
+  height: auto;
+}
+
+header h1 {
+  position: absolute;
+  top: 5.5rem;
+  left: 20rem;
+}
+header h2 {
+  position: absolute;
+  top: 9.5rem;
+  left: 24rem;
+  font-size: 1.5rem;
 }
 
 /*** Nav styles********/
 nav ul {
-  list-style: none;     
+  list-style: none;
   margin: 0;
   padding: 0;
-  display: flex;        
-  gap: 5rem;   
+  display: flex;
+  gap: 5rem;
+  position: absolute;
+  bottom: 3rem;
+  left: 14rem;
 }
 
 nav a {
-  text-decoration: none;  
-  color: #FFF;           
+  text-decoration: none;
+  color: #fff;
   cursor: pointer;
+  font-weight: 600;
+  font-size: 1.5rem;
 }
 
-/****Menu section*********/
+/***Reserve table btn styles*****/
 
+.btn {
+  display: inline-block;
+  text-decoration: none;
+  color: #fff;
+  cursor: pointer;
+  background-color: rgb(0, 71, 171);
+  border: 1px solid black;
+  padding: 1rem 1rem;
+  font-weight: 500;
+  border-radius: 0.5rem;
+  margin: 1rem auto;
+}
 
-
-
+.btn:hover {
+  background-color: #fce300;
+  color: black;
+}
