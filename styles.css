@@ -1,17 +1,21 @@
-* {
+body,
+html {
   margin: 0;
   padding: 0;
 }
 
 body {
-  padding: 20px 20px;
+  padding: 2rem 2rem;
   box-sizing: border-box;
   background-color: #0d1b2a;
   color: #fff;
   font-family: "Roboto Serif", "Times New Roman", Times, serif;
   font-weight: 400;
 }
-
+div.border {
+  border: 1px solid gold;
+  padding: 1rem 1rem;
+}
 /****Font sizing*****/
 h1,
 h2,
@@ -28,8 +32,15 @@ h1 {
 h2 {
   font-size: 2rem;
 }
+main h2 {
+  color: rgba(255, 217, 0, 0.582);
+}
 h3 {
   font-size: 1.5rem;
+  color: rgba(243, 236, 197, 0.582);
+}
+h4 {
+  color: rgba(243, 236, 197, 0.582);
 }
 
 /* header container styles*/
@@ -45,32 +56,29 @@ header {
 }
 
 header img.main-pic {
-  max-width: 100%;
-  height: auto;
+  max-width: 90%;
+  height: 300px;
 }
 
 header h1 {
   position: absolute;
-  top: 5.5rem;
-  left: 20rem;
+  top: 2rem;
+  left: 6.9rem;
 }
 header h2 {
   position: absolute;
-  top: 9.5rem;
-  left: 24rem;
+  top: 16rem;
+  left: 9.8rem;
   font-size: 1.5rem;
 }
 
 /*** Nav styles********/
 nav ul {
   list-style: none;
-  margin: 0;
+  margin-top: 0.6rem;
   padding: 0;
   display: flex;
-  gap: 5rem;
-  position: absolute;
-  bottom: 3rem;
-  left: 14rem;
+  justify-content: space-around;
 }
 
 nav a {
@@ -79,6 +87,29 @@ nav a {
   cursor: pointer;
   font-weight: 600;
   font-size: 1.5rem;
+  transition: 0.5s; /*****parameter, time******/
+}
+
+nav a:hover {
+  border: 0.2rem solid rgba(255, 217, 0, 0.582);
+  padding: 0.5rem;
+  border-radius: 5rem;
+}
+
+/*************P styling********************/
+p.left-p {
+  display: inline-block;
+  text-align: center;
+  justify-content: center;
+  width: 700px;
+  height: 200px;
+}
+
+img.pupuseras-img {
+  max-width: 90%;
+  height: 300px;
+  float: left;
+  margin-right: 1rem;
 }
 
 /***Reserve table btn styles*****/
@@ -97,6 +128,6 @@ nav a {
 }
 
 .btn:hover {
-  background-color: #fce300;
+  background-color: rgba(255, 217, 0, 0.582);
   color: black;
 }
