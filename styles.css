@@ -42,6 +42,9 @@ h3 {
 h4 {
   color: rgba(243, 236, 197, 0.582);
 }
+p.flavor {
+  color: rgba(255, 217, 0, 0.582);
+}
 
 /* header container styles*/
 
@@ -51,7 +54,7 @@ header {
   padding: 1rem 1rem;
   font-weight: 600;
   text-align: center;
-  margin: 1rem auto;
+  margin: 0.1rem auto;
   position: relative;
 }
 
@@ -73,12 +76,20 @@ header h2 {
 }
 
 /*** Nav styles********/
+/* Make nav sticky */
+nav {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background-color: #0d1b2a;
+}
+
 nav ul {
   list-style: none;
-  margin-top: 0.6rem;
   padding: 0;
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
+  gap: 2rem;
 }
 
 nav a {
