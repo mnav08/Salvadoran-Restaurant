@@ -113,36 +113,37 @@ nav a:active {
 }
 
 /*************Our story section syles********************/
-#about-us {
-  display: flow-root;
-  margin-bottom: 2rem;
-}
-p.left-p {
-  display: inline-block;
+/* ===== ABOUT US / OUR STORY SECTION ===== */
+
+#about-us h2 {
   text-align: center;
-  justify-content: center;
-  width: 700px;
+  font-size: 2.25rem;
+  margin-bottom: 0.5rem;
 }
 
-img.pupuseras-img {
-  max-width: 90%;
-  height: 300px;
-  float: left;
-  margin-right: 1rem;
+/* each row */
+.story-item {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: 2.5rem;
+  margin-bottom: 3rem;
 }
 
-p.right-p {
-  display: inline-block;
-  text-align: center;
-  justify-content: center;
-  width: 700px;
+/* image styling */
+.story-item img {
+  width: 100%;
+  height: 450px;
+  object-fit: cover;
+  border-radius: 8px;
 }
 
-img.pupuseras-2 {
-  max-width: 90%;
-  height: 300px;
-  clear: left;
-  margin-right: 1rem;
+/* text styling */
+.story-text {
+  max-width: 65ch;
+  padding: 1.5rem;
+  line-height: 1.6;
+  font-size: 1.05rem;
 }
 
 /***Reserve table btn styles*****/
