@@ -21,15 +21,18 @@ The project was developed as part of a learning process to:
 -Call-to-action button (“Reserve Table”) placed for realistic site flow.
 
 ## Tech Stack
--HTML5:	Structure and semantic layout
--CSS3:	Styling, layout design, responsiveness
--GitHub: Pages	Hosting and deployment
+-HTML5:	Structure and semantic layout.
+
+-CSS3:	Styling, layout design, responsiveness.
+
+-GitHub: Pages	Hosting and deployment.
 
 ## Installation
 No installation required. The page is deployed via GitHub Pages.
 
-## Project structure
-  sabor-cuscatleco/
+## Project structure:
+
+sabor-cuscatleco/
 │
 ├── index.html         
 ├── style.css            
