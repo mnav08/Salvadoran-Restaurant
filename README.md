@@ -28,16 +28,7 @@ The project was developed as part of a learning process to:
 -GitHub: Pages	Hosting and deployment.
 
 ## Installation
-No installation required. The page is deployed via GitHub Pages.
-
-## Project structure:
-
-sabor-cuscatleco/
-│
-├── index.html         
-├── style.css            
-├── /images              
-└── README.md           
+No installation required. The page is deployed via GitHub Pages: https://mnav08.github.io/Salvadoran-Restaurant/     
 
 ## Future improvements
 -Make the website responsive
