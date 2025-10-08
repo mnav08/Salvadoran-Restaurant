@@ -37,13 +37,13 @@ main h2 {
 }
 h3 {
   font-size: 1.5rem;
-  color: rgba(243, 236, 197, 0.582);
+  color: rgba(255, 217, 0, 0.582);
 }
 h4 {
   color: rgba(243, 236, 197, 0.582);
 }
 p.flavor {
-  color: rgba(255, 217, 0, 0.582);
+  color: rgba(243, 236, 197, 0.582);
 }
 
 /* header container styles*/
@@ -107,9 +107,14 @@ nav a:hover {
   border-radius: 5rem;
 }
 
-/*************P styling********************/
+nav a:active {
+  color: #0d1b2a;
+  background-color: aliceblue;
+}
+
+/*************Our story section syles********************/
 #about-us {
-  border: 2px solid black;
+  display: flow-root;
   margin-bottom: 2rem;
 }
 p.left-p {
