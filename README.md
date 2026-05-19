@@ -27,6 +27,6 @@ The project was developed as part of a learning process to:
 
 -GitHub: Pages	Hosting and deployment.
 
-   
+[live demo] https://mnav08.github.io/Salvadoran-Restaurant/
 
 
