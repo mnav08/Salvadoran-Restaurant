@@ -446,7 +446,8 @@ address a:hover {
   border-color: var(--color-border);
 }
 
-.nav-link.is-active {
+.nav-link.is-active,
+.nav-link--current {
   color: var(--color-bg-deep);
   background: var(--color-accent-muted);
   border-color: var(--color-accent-bright);
@@ -550,6 +551,7 @@ main {
   scroll-margin-top: calc(var(--nav-height) + 1.5rem);
 }
 
+.menu-category > h2,
 .menu-category > h3 {
   margin-top: 0;
   padding-bottom: var(--space-sm);
@@ -824,6 +826,118 @@ main {
   #desserts .menu-item {
     margin-bottom: 0;
   }
+}
+
+/* ===== Page header (menu page) ===== */
+.page-header {
+  text-align: center;
+  padding: var(--space-lg) var(--space-md) var(--space-md);
+}
+
+.page-header-eyebrow {
+  margin: 0 0 var(--space-sm);
+  font-size: 0.9rem;
+}
+
+.page-header-eyebrow a {
+  color: var(--color-muted);
+  text-decoration: none;
+  font-family: var(--font-heading);
+  font-weight: 600;
+}
+
+.page-header-eyebrow a:hover {
+  color: var(--color-accent);
+}
+
+.page-header h1 {
+  margin: 0 0 var(--space-xs);
+  color: var(--color-accent-muted);
+}
+
+.page-header-lead {
+  margin: 0 auto;
+  max-width: 40ch;
+  color: var(--color-muted);
+}
+
+.menu-page {
+  padding-top: 0;
+}
+
+/* ===== Featured / signature dishes (home) ===== */
+.featured-grid {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(16rem, 1fr));
+  gap: var(--space-md);
+}
+
+.featured-card {
+  display: flex;
+  flex-direction: column;
+  padding: var(--space-md);
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-sm);
+  transition: border-color 0.2s, transform 0.15s;
+}
+
+.featured-card:hover {
+  border-color: var(--color-accent-bright);
+  transform: translateY(-2px);
+}
+
+.featured-category {
+  font-family: var(--font-heading);
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--color-terracotta);
+  margin-bottom: var(--space-xs);
+}
+
+.featured-name {
+  margin: 0 0 var(--space-xs);
+  font-family: var(--font-heading);
+  font-size: 1.15rem;
+  color: var(--color-cream);
+}
+
+.featured-desc {
+  margin: 0;
+  flex: 1;
+  font-size: 0.95rem;
+  color: var(--color-muted);
+}
+
+.featured-price {
+  margin: var(--space-sm) 0 0;
+  font-family: var(--font-heading);
+  font-weight: 700;
+  font-size: 1.1rem;
+  color: var(--color-accent-bright);
+}
+
+.featured-cta {
+  text-align: center;
+  margin: var(--space-lg) 0 0;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
 }
 
 @media (prefers-reduced-motion: reduce) {

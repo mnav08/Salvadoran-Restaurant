@@ -38,4 +38,27 @@
       closeMenu();
     }
   });
+
+  const page =
+    window.location.pathname.split("/").pop() || "index.html";
+
+  navLinks?.forEach((link) => {
+    const href = link.getAttribute("href") || "";
+    link.classList.remove("nav-link--current");
+    link.removeAttribute("aria-current");
+
+    const isMenuPage = page === "menu.html";
+    const isHomePage = page === "index.html" || page === "";
+
+    if (isMenuPage && (href === "menu.html" || href.endsWith("/menu.html"))) {
+      link.classList.add("nav-link--current");
+      link.setAttribute("aria-current", "page");
+    } else if (
+      isHomePage &&
+      (href === "#top" || href === "index.html" || href === "index.html#top")
+    ) {
+      link.classList.add("nav-link--current");
+      link.setAttribute("aria-current", "page");
+    }
+  });
 })();
