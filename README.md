@@ -27,16 +27,6 @@ The project was developed as part of a learning process to:
 
 -GitHub: Pages	Hosting and deployment.
 
-## Installation
-No installation required. The page is deployed via GitHub Pages: https://mnav08.github.io/Salvadoran-Restaurant/     
+   
 
-## Future improvements
--Make the website responsive
--Add JavaScript for interactivity (e.g., navigation animations, contact form validation)
--Expand to multi-page structure (Menu, About, Contact).
--Incorporate CSS animations and transitions for smoother UX.
--Improve accessibility features (alt text, color contrast, ARIA labels).
 
-## License
-This project is open for educational and demonstration purposes.
-Feel free to use it as inspiration for your own learning journey.

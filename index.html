@@ -3,58 +3,101 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Sabor Cuscatleco</title>
+    <meta
+      name="description"
+      content="Sabor Cuscatleco — authentic Salvadoran cuisine in Chicago. Pupusas, traditional dishes, desserts, and drinks."
+    />
+    <title>Sabor Cuscatleco | Salvadoran Restaurant</title>
     <link rel="stylesheet" href="styles.css" />
     <link rel="icon" type="image/png" href="images/favicon.png" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto+Serif:ital,opsz,wght@0,8..144,100..900;1,8..144,100..900&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Roboto+Serif:ital,wght@0,400;0,600;1,400&display=swap"
       rel="stylesheet"
     />
+    <meta name="theme-color" content="#0d1b2a" />
+    <script src="script.js" defer></script>
   </head>
   <body>
-    <div class="border">
-      <header>
-        <img src="images\motif.png" alt="img banner" class="main-pic" />
-        <h1>Sabor Cuscatleco</h1>
-        <h2><i>Salvadoran Cuisine</i></h2>
+    <a class="skip-link" href="#main-content">Skip to main content</a>
+    <div class="page">
+      <header id="top" class="hero">
+        <div class="hero-media">
+          <img
+            src="images/motif.png"
+            alt=""
+            class="hero-image"
+            width="1200"
+            height="480"
+            decoding="async"
+          />
+          <div class="hero-overlay" aria-hidden="true"></div>
+        </div>
+        <div class="hero-content">
+          <p class="hero-eyebrow">Chicago · Lincoln Park</p>
+          <h1>Sabor Cuscatleco</h1>
+          <p class="tagline">Salvadoran cuisine made with heart</p>
+          <div class="hero-actions">
+            <a href="#menu" class="btn btn--primary">View menu</a>
+            <a href="#contact" class="btn btn--outline">Reserve a table</a>
+          </div>
+        </div>
       </header>
-      <nav>
-        <ul>
-          <li><a href="#" class="nav-link">Home</a></li>
-          <li><a href="#about-us" class="nav-link">Our Story</a></li>
 
+      <nav class="site-nav" id="site-nav" aria-label="Primary">
+        <a href="#top" class="nav-brand">Sabor Cuscatleco</a>
+        <button
+          type="button"
+          class="nav-toggle"
+          aria-expanded="false"
+          aria-controls="nav-menu"
+        >
+          <span class="nav-toggle-label">Menu</span>
+          <span class="nav-toggle-icon" aria-hidden="true"></span>
+        </button>
+        <ul class="nav-list" id="nav-menu">
+          <li><a href="#top" class="nav-link">Home</a></li>
+          <li><a href="#about-us" class="nav-link">Our Story</a></li>
           <li><a href="#menu" class="nav-link">Menu</a></li>
-          <li><a href="#footer-container" class="nav-link">Contact</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
         </ul>
       </nav>
-      <main>
-        <section id="about-us" class="our-story">
-          <h2>Our Story</h2>
-          <hr />
+      <main id="main-content">
+        <section
+          id="about-us"
+          class="our-story section"
+          aria-labelledby="about-heading"
+        >
+          <header class="section-header">
+            <h2 id="about-heading">Our Story</h2>
+            <p class="section-lead">
+              Family recipes, comal-fired pupusas, and flavors from Cuscatlán.
+            </p>
+          </header>
 
-          <!-- ROW 1: Image left, text right -->
           <div class="story-item">
             <img
               src="images/pupuseras.png"
-              alt="pupuseras"
+              alt="Women preparing pupusas on a comal"
               class="pupuseras-img"
+              width="600"
+              height="450"
+              loading="lazy"
             />
             <div class="story-text">
               <p>
                 We are here to share the flavors of El Salvador with the world.
                 Our food is more than a meal — it is a connection to our roots,
                 our traditions, and our culture. Every pupusa, every horchata,
-                and every nuégado carries the warmth of family kitchens and the
+                and every nuegado carries the warmth of family kitchens and the
                 pride of a heritage worth preserving. We invite you to
                 experience El Salvador through every bite.
               </p>
             </div>
           </div>
 
-          <!-- ROW 2: Text left, image right -->
-          <div class="story-item reverse">
+          <div class="story-item story-item--reverse">
             <div class="story-text">
               <p>
                 We believe food is the best way to tell a story. Our dishes
@@ -66,242 +109,360 @@
             </div>
             <img
               src="images/pupuseras-2.png"
-              alt="Behind the scenes"
+              alt="Pupuseras smiling behind the counter"
               class="pupuseras-2"
+              width="600"
+              height="450"
+              loading="lazy"
             />
           </div>
         </section>
 
-        <section id="menu">
-          <!--Menu container-->
-          <h2>Menu</h2>
-          <hr />
+        <section id="menu" class="section" aria-labelledby="menu-heading">
+          <header class="section-header">
+            <h2 id="menu-heading">Menu</h2>
+            <p class="section-lead">
+              From pupusas to horchata — explore our full Salvadoran table.
+            </p>
+          </header>
 
-          <div id="pupusas">
-            <h3>Pupusas</h3>
-            <p>
-              <!--Intro Description-->
+          <nav class="menu-jump" aria-label="Menu categories">
+            <ul>
+              <li><a href="#pupusas">Pupusas</a></li>
+              <li><a href="#dishes">Dishes</a></li>
+              <li><a href="#desserts">Desserts</a></li>
+              <li><a href="#drinks">Drinks</a></li>
+            </ul>
+          </nav>
+
+          <section id="pupusas" class="menu-category" aria-labelledby="pupusas-heading">
+            <h3 id="pupusas-heading">Pupusas</h3>
+            <p class="menu-intro">
               A handmade corn tortilla filled with savory goodness. Pupusas are
               El Salvador’s most beloved dish, stuffed with cheese, beans, pork,
               or a mix of flavors, then cooked to golden perfection on a
-              griddle. Served with curtido (a tangy cabbage slaw) and tomatoe
+              griddle. Served with curtido (a tangy cabbage slaw) and tomato
               sauce, they are the perfect comfort food and the heart of
               Salvadoran cuisine.
             </p>
-            <p class="flavor">Queso</p>
-            <p class="description">Chesse pupusa</p>
-            <p class="price">$2.00</p>
-            <p class="flavor">Queso con Loroco</p>
-            <p class="description">
-              Cheese-filled corn tortillas blended with loroco, a fragrant
-              Salvadoran flower bud.
-            </p>
-            <p class="price">$3.50</p>
-            <p class="flavor">Frijol con Queso</p>
-            <p class="description">Chesse with Beans pupusa</p>
-            <p class="price">$2.50</p>
-            <p class="flavor">Revueltas</p>
-            <p class="description">Chesse, Beans and Pork pupusa</p>
-            <p class="price">$3.50</p>
-            <p class="flavor">Pollo con Queso</p>
-            <p class="description">Chicken with chesse pupusa</p>
-            <p class="price">$2.00</p>
-          </div>
-          <hr />
-          <div id="dishes">
-            <h3>Traditional Dishes</h3>
-            <!--Intro Description-->
-            <p>
+            <dl class="menu-list">
+              <div class="menu-item">
+                <dt>
+                  <span class="menu-item-name">Queso</span>
+                  <span class="price">$2.00</span>
+                </dt>
+                <dd>Cheese pupusa</dd>
+              </div>
+              <div class="menu-item">
+                <dt>
+                  <span class="menu-item-name">Queso con Loroco</span>
+                  <span class="price">$3.50</span>
+                </dt>
+                <dd>
+                  Cheese-filled corn tortillas blended with loroco, a fragrant
+                  Salvadoran flower bud.
+                </dd>
+              </div>
+              <div class="menu-item">
+                <dt>
+                  <span class="menu-item-name">Frijol con Queso</span>
+                  <span class="price">$2.50</span>
+                </dt>
+                <dd>Cheese with beans pupusa</dd>
+              </div>
+              <div class="menu-item">
+                <dt>
+                  <span class="menu-item-name">Revueltas</span>
+                  <span class="price">$3.50</span>
+                </dt>
+                <dd>Cheese, beans, and pork pupusa</dd>
+              </div>
+              <div class="menu-item">
+                <dt>
+                  <span class="menu-item-name">Pollo con Queso</span>
+                  <span class="price">$2.00</span>
+                </dt>
+                <dd>Chicken with cheese pupusa</dd>
+              </div>
+            </dl>
+          </section>
+
+          <section id="dishes" class="menu-category" aria-labelledby="dishes-heading">
+            <h3 id="dishes-heading">Traditional Dishes</h3>
+            <p class="menu-intro">
               A taste of El Salvador’s most beloved meals, prepared with
               authentic flavors and family tradition.
             </p>
+            <dl class="menu-list">
+              <div class="menu-item">
+                <dt>
+                  <span class="menu-item-name">Tamales Pisques</span>
+                  <span class="price">$2.00</span>
+                </dt>
+                <dd>
+                  Soft corn tamales stuffed with refried beans and wrapped in
+                  banana leaves.
+                </dd>
+              </div>
+              <div class="menu-item">
+                <dt>
+                  <span class="menu-item-name">Tamales de Gallina</span>
+                  <span class="price">$2.00</span>
+                </dt>
+                <dd>
+                  Corn masa filled with chicken and vegetables, wrapped and
+                  steamed in banana leaves.
+                </dd>
+              </div>
+              <div class="menu-item">
+                <dt>
+                  <span class="menu-item-name">Sopa de Patas</span>
+                  <span class="price">$12.00</span>
+                </dt>
+                <dd>
+                  A hearty Salvadoran soup made with cow’s feet, tripe,
+                  vegetables, and herbs, simmered into a traditional broth.
+                </dd>
+              </div>
+              <div class="menu-item">
+                <dt>
+                  <span class="menu-item-name">Sopa de Mariscos</span>
+                  <span class="price">$15.00</span>
+                </dt>
+                <dd>
+                  A rich Salvadoran seafood stew made with shrimp, fish, clams,
+                  and crab simmered in a flavorful tomato and coconut milk
+                  broth.
+                </dd>
+              </div>
+              <div class="menu-item">
+                <dt>
+                  <span class="menu-item-name">Yuca Frita</span>
+                  <span class="price">$11.50</span>
+                </dt>
+                <dd>
+                  Crispy fried yuca served with tangy cabbage slaw for a classic
+                  Salvadoran bite.
+                </dd>
+              </div>
+              <div class="menu-item">
+                <dt>
+                  <span class="menu-item-name">Desayuno Salvadoreño</span>
+                  <span class="price">$12.50</span>
+                </dt>
+                <dd>
+                  A traditional Salvadoran breakfast served with beans, eggs,
+                  avocado, corn tortillas, and fried plantains.
+                </dd>
+              </div>
+            </dl>
+          </section>
 
-            <p class="flavor">Tamales Pisques</p>
-            <p class="description">
-              Soft corn tamales stuffed with refried beans and wrapped in banana
-              leaves.
-            </p>
-            <p class="price">$2.00</p>
-            <p class="flavor">Tamales de Gallina</p>
-            <p class="description">
-              Corn masa filled with chicken and veggies, wrapped and steamed in
-              banana leaves.
-            </p>
-            <p class="price">$2.00</p>
-            <p class="flavor">Sopa de Patas</p>
-            <p class="description">
-              A hearty Salvadoran soup made with cow’s feet, tripe, vegetables,
-              and herbs, simmered into a traditional broth.
-            </p>
-            <p class="price">$12.00</p>
-            <p class="flavor">Sopa de Mariscos</p>
-            <p class="description">
-              A rich Salvadoran seafood stew made with shrimp, fish, clams, and
-              crab simmered in a flavorful tomato and coconut milk broth.
-            </p>
-            <p class="price">$15.00</p>
-            <p class="flavor">Yuca Frita</p>
-            <p class="description">
-              Crispy fried yam served with tangy cabbage slaw for a classic
-              Salvadoran bite.
-            </p>
-            <p class="price">$11.50</p>
-            <p class="flavor">Desayuno Slavadoreno</p>
-            <p class="description">
-              A traditional Salvadoran breafast served with beans, eggs,
-              avocado, corn tortillas &amp; fried platains
-            </p>
-            <p class="price">$12.50</p>
-          </div>
-          <hr />
-          <div id="desserts">
-            <h3>Desserts</h3>
-            <!--Intro Description-->
-            <p>
+          <section id="desserts" class="menu-category" aria-labelledby="desserts-heading">
+            <h3 id="desserts-heading">Desserts</h3>
+            <p class="menu-intro">
               Sweet classics made to share, each one carrying the warmth of our
               culture in every bite.
             </p>
+            <dl class="menu-list">
+              <div class="menu-item">
+                <dt>
+                  <span class="menu-item-name">Nuegados en miel</span>
+                  <span class="price">$5.00</span>
+                </dt>
+                <dd>
+                  Sweet fried cassava fritters drizzled with warm panela syrup.
+                </dd>
+              </div>
+              <div class="menu-item">
+                <dt>
+                  <span class="menu-item-name">Plátanos en miel</span>
+                  <span class="price">$4.85</span>
+                </dt>
+                <dd>
+                  Ripe plantains simmered in panela syrup for a soft, sweet
+                  treat.
+                </dd>
+              </div>
+              <div class="menu-item">
+                <dt>
+                  <span class="menu-item-name">Torrejas</span>
+                  <span class="price">$8.50</span>
+                </dt>
+                <dd>
+                  Golden fried bread soaked in spiced syrup, a Salvadoran holiday
+                  favorite.
+                </dd>
+              </div>
+              <div class="menu-item">
+                <dt>
+                  <span class="menu-item-name">Canoas</span>
+                  <span class="price">$9.85</span>
+                </dt>
+                <dd>
+                  Sweet plantains stuffed with creamy filling and baked to
+                  perfection.
+                </dd>
+              </div>
+              <div class="menu-item">
+                <dt>
+                  <span class="menu-item-name">Churros</span>
+                  <span class="price">$10.00</span>
+                </dt>
+                <dd>
+                  Crispy fried dough sticks rolled in sugar, served
+                  Salvadoran-style.
+                </dd>
+              </div>
+            </dl>
+          </section>
 
-            <p class="flavor">Nuegados en miel</p>
-            <p class="description">
-              Sweet fried cassava fritters drizzled with warm panela syrup.
+          <section id="drinks" class="menu-category" aria-labelledby="drinks-heading">
+            <h3 id="drinks-heading">Drinks</h3>
+            <p class="menu-intro">
+              Refreshing and traditional beverages that bring the flavors of El
+              Salvador to your table.
             </p>
-            <p class="price">$5.00</p>
 
-            <p class="flavor">Platanos en miel</p>
-            <p class="description">
-              Ripe plantains simmered in panela syrup for a soft, sweet treat.
-            </p>
-            <p class="price">$4.85</p>
+            <div class="drinks-grid">
+            <section id="non-alc" class="menu-subcategory" aria-labelledby="non-alc-heading">
+              <h4 id="non-alc-heading">Non-alcoholic</h4>
+              <dl class="menu-list">
+                <div class="menu-item">
+                  <dt>
+                    <span class="menu-item-name">Kolashampan</span>
+                    <span class="price">$5.00</span>
+                  </dt>
+                  <dd>
+                    El Salvador’s iconic soda with a smooth, sweet, and bubbly
+                    taste.
+                  </dd>
+                </div>
+                <div class="menu-item">
+                  <dt>
+                    <span class="menu-item-name">Crema soda</span>
+                    <span class="price">$5.00</span>
+                  </dt>
+                  <dd>Classic creamy soda with a sweet and refreshing flavor.</dd>
+                </div>
+                <div class="menu-item">
+                  <dt>
+                    <span class="menu-item-name">Horchata</span>
+                    <span class="price">$6.50</span>
+                  </dt>
+                  <dd>
+                    A traditional Salvadoran drink made from ground morro seeds,
+                    sweetened and spiced for a nutty, refreshing taste.
+                  </dd>
+                </div>
+                <div class="menu-item">
+                  <dt>
+                    <span class="menu-item-name">Atol de elote</span>
+                    <span class="price">$5.00</span>
+                  </dt>
+                  <dd>
+                    Warm, comforting corn-based drink with a naturally sweet and
+                    creamy flavor.
+                  </dd>
+                </div>
+                <div class="menu-item">
+                  <dt>
+                    <span class="menu-item-name">Fresco de ensalada</span>
+                    <span class="price">$8.50</span>
+                  </dt>
+                  <dd>
+                    A colorful fruit punch with chopped tropical fruits in every
+                    sip.
+                  </dd>
+                </div>
+                <div class="menu-item">
+                  <dt>
+                    <span class="menu-item-name">Café salvadoreño</span>
+                    <span class="price">$6.50</span>
+                  </dt>
+                  <dd>
+                    Rich, smooth coffee grown in the highlands of El Salvador.
+                  </dd>
+                </div>
+                <div class="menu-item">
+                  <dt>
+                    <span class="menu-item-name">Chocolate salvadoreño</span>
+                    <span class="price">$7.50</span>
+                  </dt>
+                  <dd>
+                    Traditional hot chocolate made with cacao and spices, full of
+                    authentic flavor.
+                  </dd>
+                </div>
+              </dl>
+            </section>
 
-            <p class="flavor">Torrejas</p>
-            <p class="description">
-              Golden fried bread soaked in spiced syrup, a Salvadoran holiday
-              favorite.
-            </p>
-            <p class="price">$8.50</p>
-
-            <p class="flavor">Canoas</p>
-            <p class="description">
-              Sweet plantains stuffed with creamy filling and baked to
-              perfection.
-            </p>
-            <p class="price">$9.85</p>
-
-            <p class="flavor">Churros</p>
-            <p class="description">
-              Crispy fried dough sticks rolled in sugar, served
-              Salvadoran-style.
-            </p>
-            <p class="price">$10.00</p>
-          </div>
+            <section id="alc" class="menu-subcategory" aria-labelledby="alc-heading">
+              <h4 id="alc-heading">Alcoholic</h4>
+              <p class="menu-intro">
+                Locally brewed lagers with crisp, refreshing flavors, perfect for
+                pairing with our traditional dishes. Each beer is <strong>$8.00</strong>.
+              </p>
+              <dl class="menu-list">
+                <div class="menu-item">
+                  <dt><span class="menu-item-name">Pilsener</span></dt>
+                  <dd>Light, crisp, and refreshing lager.</dd>
+                </div>
+                <div class="menu-item">
+                  <dt><span class="menu-item-name">Regia</span></dt>
+                  <dd>Smooth Salvadoran lager with subtle malt notes.</dd>
+                </div>
+                <div class="menu-item">
+                  <dt><span class="menu-item-name">Golden</span></dt>
+                  <dd>Mild and easy-drinking beer with a clean finish.</dd>
+                </div>
+                <div class="menu-item">
+                  <dt><span class="menu-item-name">Suprema</span></dt>
+                  <dd>Richer flavor with a slightly stronger body.</dd>
+                </div>
+              </dl>
+            </section>
+            </div>
+          </section>
         </section>
-        <hr />
-        <section id="drinks">
-          <h3>Drinks</h3>
-          <!--Intro Description-->
-          <p>
-            Refreshing and traditional beverages that bring the flavors of El
-            Salvador to your table.
-          </p>
 
-          <div id="non-alc">
-            <h4>NON-ALC</h4>
-            <p class="flavor">Kolashampan</p>
-            <p class="description">
-              El Salvador’s iconic soda with a smooth, sweet, and bubbly taste.
-            </p>
-            <p class="price">$5.00</p>
-
-            <p class="flavor">Crema soda</p>
-            <p class="description">
-              Classic creamy soda with a sweet and refreshing flavor.
-            </p>
-            <p class="price">$5.00</p>
-
-            <p class="flavor">Horchata</p>
-            <p class="description">
-              A traditional Salvadoran drink made from ground morro seeds,
-              sweetened and spiced for a nutty, refreshing taste.
-            </p>
-            <p class="price">$6.50</p>
-
-            <p class="flavor">Atol de elote</p>
-            <p class="description">
-              Warm, comforting corn-based drink with a naturally sweet and
-              creamy flavor.
-            </p>
-            <p class="price">$5.00</p>
-
-            <p class="flavor">Fresco de ensalda</p>
-            <p class="description">
-              A colorful fruit punch with chopped tropical fruits in every sip.
-            </p>
-            <p class="price">$8.50</p>
-
-            <p class="flavor">Cafe salvadoreno</p>
-            <p class="description">
-              Rich, smooth coffee grown in the highlands of El Salvador.
-            </p>
-            <p class="price">$6.50</p>
-
-            <p class="flavor">Chocolate salvadoreno</p>
-            <p class="description">
-              Traditional hot chocolate made with cacao and spices, full of
-              authentic flavor.
-            </p>
-            <p class="price">$7.50</p>
-          </div>
-
-          <div id="alc">
-            <h4>ALC</h4>
-            <!--description-->
-            <p>
-              Locally brewed lagers with crisp, refreshing flavors, perfect for
-              pairing with our traditional dishes.
-            </p>
-            <h5>Price for all of them is $8.00</h5>
-
-            <p class="flavor">Pilsener</p>
-            <p class="description">Light, crisp, and refreshing lager.</p>
-
-            <p class="flavor">Regia</p>
-            <p class="description">
-              Smooth Salvadoran lager with subtle malt notes.
-            </p>
-
-            <p class="flavor">Golden</p>
-            <p class="description">
-              Mild and easy-drinking beer with a clean finish.
-            </p>
-
-            <p class="flavor">Suprema</p>
-            <p class="description">
-              Richer flavor with a slightly stronger body.
-            </p>
-          </div>
+        <section class="cta-band" aria-labelledby="cta-heading">
+          <h2 id="cta-heading">Join us at the table</h2>
+          <p>Walk-ins welcome · Groups of 6+ please call ahead</p>
+          <a href="#contact" class="btn btn--primary">Reserve a table</a>
         </section>
-        <a href="#" class="btn">Reserve a table</a>
       </main>
-      <footer id="footer-container">
-        <!--Brand info-->
-        <div class="col">
-          <p>Made with love by Moises N💙</p>
-          <p>© 2025 Sabor Cuscatleco</p>
+
+      <footer id="footer-container" class="site-footer">
+        <div class="col col--brand">
+          <p class="footer-brand">Sabor Cuscatleco</p>
+          <p class="footer-tagline">Authentic Salvadoran flavors in Chicago.</p>
+          <p class="footer-credit">
+            Made with love by Moises N<span aria-hidden="true">💙</span>
+          </p>
+          <p><small>© 2025 Sabor Cuscatleco</small></p>
         </div>
 
-        <!--Contact-->
-        <div class="col">
-          <h4>Contact</h4>
-          <address>123 W Diversey Av, Chicago,IL, 60640</address>
-          <p>+1 (234) 567-890</p>
-          <p>info@saborcusca.com</p>
-          <p>Mon–Sun: 10am – 10pm</p>
+        <div class="col" id="contact">
+          <h2 class="footer-heading">Contact</h2>
+          <address>
+            <p>
+              123 W Diversey Ave<br />
+              Chicago, IL 60640
+            </p>
+            <p>
+              <a href="tel:+1234567890">+1 (234) 567-890</a>
+            </p>
+            <p>
+              <a href="mailto:info@saborcusca.com">info@saborcusca.com</a>
+            </p>
+            <p>Mon–Sun: 10am – 10pm</p>
+          </address>
         </div>
 
-        <!--Social media-->
         <div class="col">
-          <h4>Follow Us</h4>
+          <h2 class="footer-heading">Follow us</h2>
+          <p class="social-note">Social links coming soon.</p>
         </div>
       </footer>
     </div>
