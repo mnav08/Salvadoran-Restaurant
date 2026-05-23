@@ -21,7 +21,26 @@
   </head>
   <body>
     <a class="skip-link" href="#main-content">Skip to main content</a>
-    <div class="page">
+    <div class="page page--home">
+      <nav class="site-nav site-nav--sticky" id="site-nav" aria-label="Primary">
+        <a href="index.html#top" class="nav-brand">Sabor Cuscatleco</a>
+        <button
+          type="button"
+          class="nav-toggle"
+          aria-expanded="false"
+          aria-controls="nav-menu"
+        >
+          <span class="nav-toggle-label">Menu</span>
+          <span class="nav-toggle-icon" aria-hidden="true"></span>
+        </button>
+        <ul class="nav-list" id="nav-menu">
+          <li><a href="#top" class="nav-link">Home</a></li>
+          <li><a href="#about-us" class="nav-link">Our Story</a></li>
+          <li><a href="menu.html" class="nav-link">Menu</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+
       <header id="top" class="hero">
         <div class="hero-media">
           <img
@@ -44,25 +63,6 @@
           </div>
         </div>
       </header>
-
-      <nav class="site-nav" id="site-nav" aria-label="Primary">
-        <a href="index.html#top" class="nav-brand">Sabor Cuscatleco</a>
-        <button
-          type="button"
-          class="nav-toggle"
-          aria-expanded="false"
-          aria-controls="nav-menu"
-        >
-          <span class="nav-toggle-label">Menu</span>
-          <span class="nav-toggle-icon" aria-hidden="true"></span>
-        </button>
-        <ul class="nav-list" id="nav-menu">
-          <li><a href="#top" class="nav-link">Home</a></li>
-          <li><a href="#about-us" class="nav-link">Our Story</a></li>
-          <li><a href="menu.html" class="nav-link">Menu</a></li>
-          <li><a href="#contact" class="nav-link">Contact</a></li>
-        </ul>
-      </nav>
       <main id="main-content">
         <section
           id="about-us"

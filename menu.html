@@ -21,17 +21,8 @@
   </head>
   <body>
     <a class="skip-link" href="#main-content">Skip to main content</a>
-    <div class="page">
-      <header class="page-header">
-        <p class="page-header-eyebrow"><a href="index.html">← Back to home</a></p>
-        <h1>Our Menu</h1>
-        <p class="page-header-lead">
-          Pupusas, platos tradicionales, postres, and bebidas — the full Sabor
-          Cuscatleco table.
-        </p>
-      </header>
-
-      <nav class="site-nav" id="site-nav" aria-label="Primary">
+    <div class="page page--menu">
+      <nav class="site-nav site-nav--sticky" id="site-nav" aria-label="Primary">
         <a href="index.html" class="nav-brand">Sabor Cuscatleco</a>
         <button
           type="button"
@@ -50,9 +41,18 @@
         </ul>
       </nav>
 
+      <header class="page-header">
+        <p class="page-header-eyebrow"><a href="index.html">← Back to home</a></p>
+        <h1>Our Menu</h1>
+        <p class="page-header-lead">
+          Pupusas, platos tradicionales, postres, and bebidas — the full Sabor
+          Cuscatleco table.
+        </p>
+      </header>
+
       <main id="main-content">
         <section class="section menu-page" aria-label="Full menu">
-          <nav class="menu-jump" aria-label="Menu categories">
+          <nav class="menu-jump menu-jump--sticky" aria-label="Menu categories">
             <ul>
               <li><a href="#pupusas">Pupusas</a></li>
               <li><a href="#dishes">Dishes</a></li>
